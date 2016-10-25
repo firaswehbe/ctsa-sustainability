@@ -5,14 +5,13 @@ rm(list=ls())
 #library(latticeExtra)
 mysurveys <- read.csv("input/survey.csv", stringsAsFactors=FALSE )
 #mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
-#mysurveys<-mysurveys[mytimes>=mystart & mytimes<=myend,]
 maxbarlocus = 15
 
 # Delete Van and Robert -- hard coded to record id 19 and 20
-mysurveys <- mysurveys[-c(19,20),] 
+mysurveys <- mysurveys[ mysurveys$test_record___1 != 1, ] 
 
-# Delete non-completed surveys
-mysurveys <- mysurveys[ mysurveys$rc_survey_1_complete == 2, ]
+# Delete surveys with an empty timestamp
+mysurveys <- mysurveys[ mysurveys$rc_survey_1_timestamp != '', ]
 
 # Variable stub to use
 myvarstubs = c(
@@ -53,7 +52,7 @@ barplot(sort(locusoptions), horiz=TRUE, las=1,
         main=NULL, 
         xlim=c(0,maxbarlocus),col="black",border="white")
 dev.off()
-print("Made locus control")
+print(paste0("Made locus control ",myvarstub))
 
 # Sustainability Considerations
 png(file=paste0("output/",myvarstub,"_sust.png"),width=800,height=400,res=150)
@@ -72,5 +71,5 @@ barplot(sort(sustoptions), horiz=TRUE, las=1,
         main=NULL, 
         xlim=c(0,maxbarlocus),col="black",border="white")
 dev.off()
-print("Made sustainability")
+print(paste0("Made sustainability ",myvarstub))
 
