@@ -1,0 +1,333 @@
+"Variable / Field Name","Form Name","Section Header","Field Type","Field Label","Choices, Calculations, OR Slider Labels","Field Note","Text Validation Type OR Show Slider Number","Text Validation Min","Text Validation Max",Identifier?,"Branching Logic (Show field only if...)","Required Field?","Custom Alignment","Question Number (surveys only)","Matrix Group Name","Matrix Ranking?","Field Annotation"
+record_id,wg_roster,,text,"Record ID",,,,,,,,,,,,,
+first_name,wg_roster,,text,"First Name",,,,,,,,y,,,,,
+last_name,wg_roster,,text,"Last Name",,,,,,y,,y,,,,,
+email,wg_roster,,text,Email,,,email,,,y,,y,,,,,
+institution,wg_roster,,dropdown,"CTSA Hub / Institution","1, Boston University | 2, Case Western Reserve | 3, Children's National | 4, Cincinnati Children's Hospital Medical Center | 5, Columbia University | 6, Weill Cornell Medical College | 7, Dartmouth Medical School | 8, Duke University | 9, Albert Einstein College of Medicine | 10, Emory University | 11, Georgetown University | 12, Harvard University | 13, Indiana University | 14, Johns Hopkins University | 15, Mayo Clinic | 16, Medical College of Wisconsin | 17, Medical University of South Carolina | 18, Mount Sinai Hospital | 19, New York University School of Medicine | 20, Northwestern University | 21, Ohio State University Wexner Medical School | 22, Oregon Health & Science University | 23, Penn State  Hershey Medical Center | 24, Regenstrief Institute | 25, Scripps | 26, Stanford University | 27, The Rockefeller University | 28, The University of Texas Medical Branch at Galveston | 29, University at Buffalo | 30, University of Alabama | 31, University of Arkansas for Medical Sciences | 32, University of California, Davis | 33, University of California, Irvine | 34, University of California, Los Angeles | 35, University of California, San Diego | 36, University of California, San Francisco | 37, University of Chicago | 38, University of Cincinnati | 39, University of Colorado, Denver | 40, University of Florida | 41, University of Illinois at Chicago | 42, University of Iowa | 43, University of Kansas Hospital | 44, University of Kentucky | 45, University of Massachusetts Medical School | 46, University of Miami | 47, University of Michigan | 48, University of Minnesota | 49, University of New Mexico | 50, University of North Carolina, Chapel Hill | 51, University of Pennsylvania | 52, University of Pittsburg | 53, University of Rochester Medical Center | 54, University of Southern California | 55, University of Texas Health Science Center - Houston | 56, University of Texas Health Science Center, San Antonio | 57, University of Texas Southwestern | 58, University of Utah | 59, University of Washington | 60, University of Wisconsin-Madison | 61, Vanderbilt University | 62, Virginia Commonwealth University | 63, Wake Forest Baptist Medical Center | 64, Washington University in St. Louis | 65, Yale University | 66, NCATS | 99, Other...",,autocomplete,,,y,,y,,,,,
+test_record,wg_roster,,checkbox,"Test record","1, Yes",,,,,,,,,,,,
+instructions_1,rc_survey_1,Instructions,descriptive,"Manuscript Working Title: (Academic Medicine target journal)
+Sustainability Considerations for Clinical and Translational Research Informatics Infrastructure
+",,,,,,,,,,,,,
+instructions_2,rc_survey_1,,descriptive,"<u>Quick Recap</u>
+Current efforts are focused on two aims that we have been doing iteratively in our meetings
+1. Enumerate, define, and categorize the various informatics resources (almost done) - Last steps for polishing this step should include links to examples and references
+2. Elicit comments from the group about sustainability considerations for each category of resources
+
+<u>Note:</u> We have organized the various resources that came up into Categories and those in turn into Major Headings. On a recent call we realized that discussing sustainability for each resource type may be redundant and that the sustainability considerations would be better conveyed if coalesced into the ""Category"" level.
+
+<u>Some Definitions:</u>
+Informatics: The informatics core, service, center or institute (including a CRIO) that gets some funding from the CTSA for any Informatics activity.
+IT or CIO: Information Systems, Information Technology Department under the CIO either at the Health system or hospital system, or university or college.
+Research Office: Office of Research and Sponsored Programs, Clinical Research Office, VP for Research Office.
+
+",,,,,,,,,,,,,
+instructions_3,rc_survey_1,,descriptive,"<a href=""https://docs.google.com/spreadsheets/d/1suDlA2By4VZMjWZSkgZH4zuCxQ3GH8rzxB_NLKrQoQA/edit?usp=sharing"" target=""_blank"">Click here to view working spreadsheet on google drive.</a>
+
+The current working sheet is under the ""Iteration 5"" tab.",,,,,,,,,,,,,
+instruction_4,rc_survey_1,,descriptive,"The distinct categories from that worksheet are shown below. Not shown in this table are the individual resource types, their definitions, examples, references, or sustainability considerations. If you are interested in those details, you can see them in columns on the right side of the working spreadsheet.",,,,,,,,,,,,,
+asctr_1_1_defenition,rc_survey_1,"1. Application and Support of Clinical and Translational Research - Research / Regulatory Compliance",descriptive,"Research/Regulatory Compliance
+
+Examples include (see spreadsheet above for definitions)
+* Conflict of interest management system
+* Electronic IRB management system
+* Consent 
+* CT.gov registration process
+* Public access policy compliance tracking",,,,,,,,,,,,,
+asctr_1_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_1_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_1_1_locus_options(4)] = '1'",,,,,,
+asctr_1_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_1_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_1_1_sust_options(4)] = '1'",,,,,,
+asctr_1_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_1_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_2_1_defenition,rc_survey_1,"2. Application and Support of Clinical and Translational Research - Service Request / Fullfillment",descriptive,"Service Request / Fulfillment
+
+Examples include (see spreadsheet above for definitions)
+* Service request system
+* Resource navigation and inventory
+* Service fulfillment system",,,,,,,,,,,,,
+asctr_2_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_2_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_2_1_locus_options(4)] = '1'",,,,,,
+asctr_2_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_2_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_2_1_sust_options(4)] = '1'",,,,,,
+asctr_2_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_2_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_3_1_defenition,rc_survey_1,"3. Application and Support of Clinical and Translational Research - Program Evaluation",descriptive,"Program Evaluation
+
+Examples include (see spreadsheet above for definitions)
+* Citation Capture and Service
+* Fulfillment Attribution",,,,,,,,,,,,,
+asctr_3_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_3_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_3_1_locus_options(4)] = '1'",,,,,,
+asctr_3_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_3_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_3_1_sust_options(4)] = '1'",,,,,,
+asctr_3_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_3_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_4_1_defenition,rc_survey_1,"4. Application and Support of Clinical and Translational Research - Grants and Contracts Systems",descriptive,"Grants and Contracts Systems
+
+Examples include (see spreadsheet above for definitions)
+* Electronic Grants and Contracts System
+* CTSA and other pilot grants",,,,,,,,,,,,,
+asctr_4_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_4_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_4_1_locus_options(4)] = '1'",,,,,,
+asctr_4_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_4_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_4_1_sust_options(4)] = '1'",,,,,,
+asctr_4_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_4_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_5_1_defenition,rc_survey_1,"5. Application and Support of Clinical and Translational Research - CTMS Components",descriptive,"CTMS Components
+
+Examples include (see spreadsheet above for definitions)
+* Clinical Research Budgeting
+* Participant Payment Model
+* Billing compliance
+* Adverse events reporting",,,,,,,,,,,,,
+asctr_5_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_5_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_5_1_locus_options(4)] = '1'",,,,,,
+asctr_5_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_5_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_5_1_sust_options(4)] = '1'",,,,,,
+asctr_5_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_5_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_6_1_defenition,rc_survey_1,"6. Application and Support of Clinical and Translational Research - Electronic Data Capture",descriptive,"Electronic Data Capture
+
+Examples include (see spreadsheet above for definitions)
+* Investigator Initiated Studies
+* Multicenter studies
+* Large studies
+* 21CFR11 support
+* Patient Reported Outcomes (PRO)
+* Mobile app support",,,,,,,,,,,,,
+asctr_6_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_6_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_6_1_locus_options(4)] = '1'",,,,,,
+asctr_6_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_6_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_6_1_sust_options(4)] = '1'",,,,,,
+asctr_6_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_6_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_7_1_defenition,rc_survey_1,"7. Application and Support of Clinical and Translational Research - Biobanking Systems",descriptive,"Biobanking Systems
+
+Examples include (see spreadsheet above for definitions)
+* Biobank or biorepository management systems",,,,,,,,,,,,,
+asctr_7_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_7_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_7_1_locus_options(4)] = '1'",,,,,,
+asctr_7_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_7_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_7_1_sust_options(4)] = '1'",,,,,,
+asctr_7_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_7_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_8_1_defenition,rc_survey_1,"8. Application and Support of Clinical and Translational Research - Data Repositories and EHR Data",descriptive,"Data Repositories and EHR Data
+
+Examples include (see spreadsheet above for definitions)
+* Cohort exploration tools (self-service)
+* IDR navigation/honest broker services
+* Analytics services
+* Study specific integrated data
+* Big data storage
+* Big data interfaces
+* Analysis tools
+* Visualization tools
+* Molecular Data Set
+* Imaging Data Set
+* Public Health Data Set
+* Environmental Data Set",,,,,,,,,,,,,
+asctr_8_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_8_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_8_1_locus_options(4)] = '1'",,,,,,
+asctr_8_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_8_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_8_1_sust_options(4)] = '1'",,,,,,
+asctr_8_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_8_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_9_1_defenition,rc_survey_1,"9. Application and Support of Clinical and Translational Research - Clinical Medical Information Systems (EHR Systems Research Interface)",descriptive,"Clinical Medical Information Systems (EHR Systems Research Interface)
+
+Examples include (see spreadsheet above for definitions)
+* Research Related Decision Support
+* Recruitment
+* Research that utilizes the EMR
+* Interfaces with EHR",,,,,,,,,,,,,
+asctr_9_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_9_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_9_1_locus_options(4)] = '1'",,,,,,
+asctr_9_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_9_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_9_1_sust_options(4)] = '1'",,,,,,
+asctr_9_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_9_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+asctr_10_1_defenition,rc_survey_1,"10. Application and Support of Clinical and Translational Research - Communication",descriptive,"Communication
+
+Examples include (see spreadsheet above for definitions)
+* Content collaboration
+* Project management
+* Information/Service Portal
+* Research Networking
+* Data publishing and data sharing plans",,,,,,,,,,,,,
+asctr_10_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+asctr_10_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[asctr_10_1_locus_options(4)] = '1'",,,,,,
+asctr_10_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+asctr_10_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[asctr_10_1_sust_options(4)] = '1'",,,,,,
+asctr_10_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+asctr_10_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+rc_1_1_defenition,rc_survey_1,"11. Research Collaboration - Extramural data collaborations",descriptive,"Extramural data collaborations
+
+Examples include (see spreadsheet above for definitions)
+* Resources for participating in large networked collaborations
+* Back-end
+* Front-end provider facing
+* Front-end patient facing",,,,,,,,,,,,,
+rc_1_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+rc_1_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[rc_1_1_locus_options(4)] = '1'",,,,,,
+rc_1_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+rc_1_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[rc_1_1_sust_options(4)] = '1'",,,,,,
+rc_1_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+rc_1_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+ci_1_1_defenition,rc_survey_1,"12. Cyber Infrastructure - Security",descriptive,"Security
+
+Examples include (see spreadsheet above for definitions)
+* People/documentation/Training
+* Protecting privacy
+* Server security
+* FISMA compliance",,,,,,,,,,,,,
+ci_1_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+ci_1_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[ci_1_1_locus_options(4)] = '1'",,,,,,
+ci_1_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+ci_1_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[ci_1_1_sust_options(4)] = '1'",,,,,,
+ci_1_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+ci_1_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+ci_2_1_defenition,rc_survey_1,"13. Cyber Infrastructure - IT Infrastructure",descriptive,"IT Infrastructure
+
+Examples include (see spreadsheet above for definitions)
+* Servers
+* Software licenses
+* Networks",,,,,,,,,,,,,
+ci_2_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+ci_2_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[ci_2_1_locus_options(4)] = '1'",,,,,,
+ci_2_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+ci_2_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[ci_2_1_sust_options(4)] = '1'",,,,,,
+ci_2_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+ci_2_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+og_1_1_defenition,rc_survey_1,"14. Oversight and Governance - Governance",descriptive,"Governance
+
+Examples include (see spreadsheet above for definitions)
+* Standing IT governance committees or steering committees
+* Regulatory operational support",,,,,,,,,,,,,
+og_1_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+og_1_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[og_1_1_locus_options(4)] = '1'",,,,,,
+og_1_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+og_1_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[og_1_1_sust_options(4)] = '1'",,,,,,
+og_1_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+og_1_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+ts_1_1_defenition,rc_survey_1,"15. Training and Support - Education",descriptive,"Education
+
+Examples include (see spreadsheet above for definitions)
+* Seminars (Top Down)
+* Courses
+* In-app video training
+* Regulatory training
+* One on one (Bottom up)",,,,,,,,,,,,,
+ts_1_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+ts_1_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[ts_1_1_locus_options(4)] = '1'",,,,,,
+ts_1_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+ts_1_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[ts_1_1_sust_options(4)] = '1'",,,,,,
+ts_1_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+ts_1_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
+mri_1_1_defenition,rc_survey_1,"16. Methodological Research and Innovation - Informatics innovation",descriptive,"Informatics innovation
+
+Examples include (see spreadsheet above for definitions)
+* Faculty
+* Student pipeline
+* Software engineers/professional staff
+* Support for rapid prototyping and implementation.",,,,,,,,,,,,,
+mri_1_1_locus_options,rc_survey_1,,checkbox,"Locus of control or ownership","1, Informatics | 2, Research office | 3, IT Department / CIO | 4, Other",,,,,,,,,,,,
+mri_1_1_locus_notes,rc_survey_1,,notes,"Locus of control general notes ",,,,,,,"[mri_1_1_locus_options(4)] = '1'",,,,,,
+mri_1_1_sust_options,rc_survey_1,,checkbox,"Sustainability options","1, Institutional infrastructure | 2, Fees for service model | 3, Sustained grant support | 4, Other",,,,,,,,,,,,
+mri_1_1_sust_notes,rc_survey_1,,notes,"Sustainability general notes",,,,,,,"[mri_1_1_sust_options(4)] = '1'",,,,,,
+mri_1_1_comments,rc_survey_1,,notes,"Any general comments on the structure and definition of this category? 
+
+This can include
+* Additions of missing items within this category
+* Removal of superfluous or inappropriate items
+* Replacement / merger of specific items by / with other items
+* Refining the definitions",,,,,,,,,,,,,
+mri_1_1_references,rc_survey_1,,notes,"Please feel free to provide here any citations or existing systems that could be included as references or examples for this category.",,,,,,,,,,,,,
