@@ -48,7 +48,8 @@ names(locusoptions) <- c(
   "IT Department/CIO", "Other"
 )
 par(mar=c(2,9,1,1))
-barplot(sort(locusoptions), horiz=TRUE, las=1, 
+barplot(locusoptions, horiz=TRUE, las=1, 
+#barplot(sort(locusoptions), horiz=TRUE, las=1, 
         main=NULL, 
         xlim=c(0,maxbarlocus),col="black",border="white")
 dev.off()
@@ -67,7 +68,8 @@ names(sustoptions) <- c(
   "Sustained grant support", "Other"
 )
 par(mar=c(2,11,1,1))
-barplot(sort(sustoptions), horiz=TRUE, las=1, 
+barplot(sustoptions, horiz=TRUE, las=1, 
+#barplot(sort(sustoptions), horiz=TRUE, las=1, 
         main=NULL, 
         xlim=c(0,maxbarlocus),col="black",border="white")
 dev.off()
