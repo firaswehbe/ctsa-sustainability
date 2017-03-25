@@ -260,7 +260,7 @@ colnames(mydata)=c(
   "Program\nEvaluation" , 
   "Bio-banking\nMgmt" , 
   "Clinical Trial\nManagement Systems" , 
-  "Elec Data Capture", 
+  "Electronic Data Capture", 
   "Data Repositories\nincl EHR" , 
   "Extra Mural\nData Collaboration", 
   "EMR for Research",
@@ -273,7 +273,7 @@ mydata=rbind(rep(16,13) , rep(0,13) , mydata)
 
 
 # radarChart Locus Informatics
-png(file=paste0("output/radar_loc_informatics.png"),width=1500,height=1500,res=150)
+png(file=paste0("output/radar_loc_informatics.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,3),]  , axistype=1 ,
             #custom polygon
             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
@@ -286,7 +286,7 @@ title(main = "Locus of Control: Informatics", cex.main = 2)
 dev.off()
 
 # radarChart Locus Research Office
-png(file=paste0("output/radar_loc_research_office.png"),width=1500,height=1500,res=150)
+png(file=paste0("output/radar_loc_research_office.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,4),]  , axistype=1 ,
             #custom polygon
             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
@@ -299,7 +299,7 @@ title(main = "Locus of Control: Research Office", cex.main = 2)
 dev.off()
 
 # radarChart Locus CIO/IT
-png(file=paste0("output/radar_loc_cio.png"),width=1500,height=1500,res=150)
+png(file=paste0("output/radar_loc_cio.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,5),]  , axistype=1 ,
             #custom polygon
             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
@@ -312,7 +312,7 @@ title(main = "Locus of Control: IT Department/CIO", cex.main = 2)
 dev.off()
 
 # radarChart Sustainability Institutional
-png(file=paste0("output/radar_sust_institutional.png"),width=1500,height=1500,res=150)
+png(file=paste0("output/radar_sust_institutional.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,6),]  , axistype=1 ,
             #custom polygon
             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
@@ -325,7 +325,7 @@ title(main = "Sustainability Model: Institutional Funds", cex.main = 2)
 dev.off()
 
 # radarChart Sustainability Fee for Service
-png(file=paste0("output/radar_sust_fees.png"),width=1500,height=1500,res=150)
+png(file=paste0("output/radar_sust_fees.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,7),]  , axistype=1 ,
             #custom polygon
             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
@@ -338,7 +338,7 @@ title(main = "Sustainability Model: Chargeback or Fee-for-Service", cex.main = 2
 dev.off()
 
 # radarChart Sustainability Grants
-png(file=paste0("output/radar_sust_grants.png"),width=1500,height=1500,res=150)
+png(file=paste0("output/radar_sust_grants.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,8),]  , axistype=1 ,
             #custom polygon
             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
