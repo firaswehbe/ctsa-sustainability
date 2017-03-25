@@ -5,7 +5,7 @@ rm(list=ls())
 #library(latticeExtra)
 mysurveys <- read.csv("input/survey.csv", stringsAsFactors=FALSE )
 #mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
-maxbarlocus = 15
+maxbarlocus = 16
 
 # Delete Van and Robert -- hard coded to record id 19 and 20
 mysurveys <- mysurveys[ mysurveys$test_record___1 != 1, ] 
