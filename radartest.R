@@ -3,6 +3,7 @@
 
 # Library
 library(fmsb)
+library(RColorBrewer)
 
 myanswersums = colSums(
   mysurveys[,c(
