@@ -350,3 +350,41 @@ radarchart( mydata[c(1,2,8),]  , axistype=1 ,
 title(main = "Sustainability Model: Sustained Grant Support", cex.main = 2)
 dev.off()
 
+CombinedPallette = brewer.pal(6,"Dark2")
+
+# radarChart Combined Locus
+png(file=paste0("output/radar_loc_combined.png"),width=1800,height=1500,res=150)
+radarchart( mydata[c(1,2,3,4,5),]  , axistype=1 ,
+            #custom polygon
+            #pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , 
+            #custom line
+            plwd=4 , pcol=CombinedPallette[1:3], plty=1, 
+            #custom the grid
+            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
+            #custom labels
+            vlcex=1.2
+)
+title(main = "Locus of Control", cex.main = 2)
+legend("bottomleft", legend = c("Informatics","Research Office","CIO/IT"), 
+       col = CombinedPallette[1:3],
+       lty = 1, lwd = 4)
+dev.off()
+
+# radarChart Combined Sustainability
+png(file=paste0("output/radar_sust_combined.png"),width=1800,height=1500,res=150)
+radarchart( mydata[c(1,2,6,7,8),]  , axistype=1 ,
+            #custom polygon
+            #pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , 
+            #custom line
+            plwd=4 , pcol=CombinedPallette[4:6], plty=1, 
+            #custom the grid
+            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
+            #custom labels
+            vlcex=1.2
+)
+title(main = "Sustainability Model", cex.main = 2)
+legend("bottomleft", legend = c("Institutional","Fee for Service / Charge Back","Grants"), 
+       col = CombinedPallette[4:6],
+       lty = 1, lwd = 4)
+dev.off()
+
