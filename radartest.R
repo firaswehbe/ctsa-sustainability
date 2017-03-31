@@ -368,7 +368,7 @@ radarchart( mydata[c(1,2,3,4,5),]  , axistype=1 ,
 title(main = "Locus of Control", cex.main = 2)
 legend("bottomleft", legend = c("Informatics","Research Office","CIO/IT"), 
        col = CombinedPallette[1:3],
-       lty = 1, lwd = 4)
+       lty = 1, lwd = 4, cex = 1.2)
 dev.off()
 
 # radarChart Combined Sustainability
@@ -386,6 +386,6 @@ radarchart( mydata[c(1,2,6,7,8),]  , axistype=1 ,
 title(main = "Sustainability Model", cex.main = 2)
 legend("bottomleft", legend = c("Institutional","Fee for Service / Charge Back","Grants"), 
        col = CombinedPallette[4:6],
-       lty = 1, lwd = 4)
+       lty = 1, lwd = 4, cex = 1.2)
 dev.off()
 
