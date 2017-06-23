@@ -253,7 +253,6 @@ mymatrix = matrix(
 )
 
 # Create data
-#mydata=as.data.frame( matrix(mymatrix[1,],ncol=12) )
 mydata=as.data.frame( mymatrix )
 colnames(mydata)=c(
   "Regulatory Compliance\nfor Research" , 
@@ -269,99 +268,98 @@ colnames(mydata)=c(
   "IT\nInfrastructure",
   "Oversight and\nGovernance",
   "Informatics\nInnovation")
+
 # To use the fmsb package, I have to add 2 lines to the dataframe: the max and min of each topic to show on the plot!
-mydata=rbind(rep(16,13) , rep(0,13) , mydata)
+mydata=rbind(rep(50,13) , rep(0,13) , mydata)
 
+# # Commenting out all the filled polygons for individual axes. Focusing only on combined plots
+# # radarChart Locus Informatics
+# png(file=paste0("output/radar_loc_informatics.png"),width=1800,height=1500,res=150)
+# radarchart( mydata[c(1,2,3),]  , axistype=1 ,
+#             #custom polygon
+#             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
+#             #custom the grid
+#             cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,42,10), cglwd=0.8,
+#             #custom labels
+#             vlcex=1.2
+# )
+# title(main = "Locus of Control: Informatics", cex.main = 2)
+# dev.off()
 
-# radarChart Locus Informatics
-png(file=paste0("output/radar_loc_informatics.png"),width=1800,height=1500,res=150)
-radarchart( mydata[c(1,2,3),]  , axistype=1 ,
-            #custom polygon
-            pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
-            #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
-            #custom labels
-            vlcex=1.2
-)
-title(main = "Locus of Control: Informatics", cex.main = 2)
-dev.off()
+# # radarChart Locus Research Office
+# png(file=paste0("output/radar_loc_research_office.png"),width=1800,height=1500,res=150)
+# radarchart( mydata[c(1,2,4),]  , axistype=1 ,
+#             #custom polygon
+#             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
+#             #custom the grid
+#             cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,42,10), cglwd=0.8,
+#             #custom labels
+#             vlcex=1.2
+# )
+# title(main = "Locus of Control: Research Office", cex.main = 2)
+# dev.off()
 
-# radarChart Locus Research Office
-png(file=paste0("output/radar_loc_research_office.png"),width=1800,height=1500,res=150)
-radarchart( mydata[c(1,2,4),]  , axistype=1 ,
-            #custom polygon
-            pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
-            #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
-            #custom labels
-            vlcex=1.2
-)
-title(main = "Locus of Control: Research Office", cex.main = 2)
-dev.off()
+# # radarChart Locus CIO/IT
+# png(file=paste0("output/radar_loc_cio.png"),width=1800,height=1500,res=150)
+# radarchart( mydata[c(1,2,5),]  , axistype=1 ,
+#             #custom polygon
+#             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
+#             #custom the grid
+#             cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,42,10), cglwd=0.8,
+#             #custom labels
+#             vlcex=1.2
+# )
+# title(main = "Locus of Control: IT Department/CIO", cex.main = 2)
+# dev.off()
 
-# radarChart Locus CIO/IT
-png(file=paste0("output/radar_loc_cio.png"),width=1800,height=1500,res=150)
-radarchart( mydata[c(1,2,5),]  , axistype=1 ,
-            #custom polygon
-            pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
-            #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
-            #custom labels
-            vlcex=1.2
-)
-title(main = "Locus of Control: IT Department/CIO", cex.main = 2)
-dev.off()
+# # radarChart Sustainability Institutional
+# png(file=paste0("output/radar_sust_institutional.png"),width=1800,height=1500,res=150)
+# radarchart( mydata[c(1,2,6),]  , axistype=1 ,
+#             #custom polygon
+#             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
+#             #custom the grid
+#             cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,42,10), cglwd=0.8,
+#             #custom labels
+#             vlcex=1.2
+# )
+# title(main = "Sustainability Model: Institutional Funds", cex.main = 2)
+# dev.off()
 
-# radarChart Sustainability Institutional
-png(file=paste0("output/radar_sust_institutional.png"),width=1800,height=1500,res=150)
-radarchart( mydata[c(1,2,6),]  , axistype=1 ,
-            #custom polygon
-            pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
-            #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
-            #custom labels
-            vlcex=1.2
-)
-title(main = "Sustainability Model: Institutional Funds", cex.main = 2)
-dev.off()
+# # radarChart Sustainability Fee for Service
+# png(file=paste0("output/radar_sust_fees.png"),width=1800,height=1500,res=150)
+# radarchart( mydata[c(1,2,7),]  , axistype=1 ,
+#             #custom polygon
+#             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
+#             #custom the grid
+#             cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,42,10), cglwd=0.8,
+#             #custom labels
+#             vlcex=1.2
+# )
+# title(main = "Sustainability Model: Chargeback or Fee-for-Service", cex.main = 2)
+# dev.off()
 
-# radarChart Sustainability Fee for Service
-png(file=paste0("output/radar_sust_fees.png"),width=1800,height=1500,res=150)
-radarchart( mydata[c(1,2,7),]  , axistype=1 ,
-            #custom polygon
-            pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
-            #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
-            #custom labels
-            vlcex=1.2
-)
-title(main = "Sustainability Model: Chargeback or Fee-for-Service", cex.main = 2)
-dev.off()
-
-# radarChart Sustainability Grants
-png(file=paste0("output/radar_sust_grants.png"),width=1800,height=1500,res=150)
-radarchart( mydata[c(1,2,8),]  , axistype=1 ,
-            #custom polygon
-            pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
-            #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
-            #custom labels
-            vlcex=1.2
-)
-title(main = "Sustainability Model: Sustained Grant Support", cex.main = 2)
-dev.off()
+# # radarChart Sustainability Grants
+# png(file=paste0("output/radar_sust_grants.png"),width=1800,height=1500,res=150)
+# radarchart( mydata[c(1,2,8),]  , axistype=1 ,
+#             #custom polygon
+#             pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , plwd=4 ,
+#             #custom the grid
+#             cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,42,10), cglwd=0.8,
+#             #custom labels
+#             vlcex=1.2
+# )
+# title(main = "Sustainability Model: Sustained Grant Support", cex.main = 2)
+# dev.off()
 
 CombinedPallette = brewer.pal(6,"Dark2")
 
 # radarChart Combined Locus
 png(file=paste0("output/radar_loc_combined.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,3,4,5),]  , axistype=1 ,
-            #custom polygon
-            #pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , 
             #custom line
             plwd=4 , pcol=CombinedPallette[1:3], plty=1, 
             #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
+            cglcol="grey", cglty=1, axislabcol="grey", seg=5, caxislabels=seq(0,50,10), cglwd=0.8,
             #custom labels
             vlcex=1.2
 )
@@ -374,12 +372,10 @@ dev.off()
 # radarChart Combined Sustainability
 png(file=paste0("output/radar_sust_combined.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,6,7,8),]  , axistype=1 ,
-            #custom polygon
-            #pcol=rgb(0.2,0.5,0.5,0.9) , pfcol=rgb(0.2,0.5,0.5,0.5) , 
             #custom line
             plwd=4 , pcol=CombinedPallette[4:6], plty=1, 
             #custom the grid
-            cglcol="grey", cglty=1, axislabcol="grey", caxislabels=seq(0,16,4), cglwd=0.8,
+            cglcol="grey", cglty=1, axislabcol="grey", seg=5, caxislabels=seq(0,50,10), cglwd=0.8,
             #custom labels
             vlcex=1.2
 )
