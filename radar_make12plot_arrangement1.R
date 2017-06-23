@@ -22,7 +22,7 @@ colnames(mydata)=c(
 # To use the fmsb package, I have to add 2 lines to the dataframe: the max and min of each topic to show on the plot!
 mydata=rbind(rep(50,13) , rep(0,13) , mydata)
 
-CombinedPallette = brewer.pal(6,"Dark2")
+CombinedPallette = brewer.pal(8,"Dark2")
 
 # radarChart Combined Locus
 png(file=paste0("output/radar_loc_combined_12cats_1.png"),width=1800,height=1500,res=150)
@@ -44,7 +44,7 @@ dev.off()
 png(file=paste0("output/radar_sust_combined_12cats_1.png"),width=1800,height=1500,res=150)
 radarchart( mydata[c(1,2,7,8,9),]  , axistype=1 ,
             #custom line
-            plwd=4 , pcol=CombinedPallette[4:6], plty=1, 
+            plwd=4 , pcol=CombinedPallette[5:7], plty=1, 
             #custom the grid
             cglcol="grey", cglty=1, axislabcol="grey", seg=5, caxislabels=seq(0,50,10), cglwd=0.8,
             #custom labels
@@ -52,7 +52,7 @@ radarchart( mydata[c(1,2,7,8,9),]  , axistype=1 ,
 )
 title(main = "Sustainability Model", cex.main = 2)
 legend("bottomleft", legend = c("Institutional","Fee for Service / Charge Back","Grants"), 
-       col = CombinedPallette[4:6],
+       col = CombinedPallette[5:7],
        lty = 1, lwd = 4, cex = 1.2)
 dev.off()
 
