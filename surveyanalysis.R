@@ -5,13 +5,18 @@ rm(list=ls())
 #library(latticeExtra)
 mysurveys <- read.csv("input/survey.csv", stringsAsFactors=FALSE )
 #mytimes <- as.POSIXct(mysurveys$presurvey_timestamp)
-maxbarlocus = 16
+maxbarlocus = 42
 
 # Delete Van and Robert -- hard coded to record id 19 and 20
 mysurveys <- mysurveys[ mysurveys$test_record___1 != 1, ] 
 
-# Delete surveys with an empty timestamp
-mysurveys <- mysurveys[ mysurveys$rc_survey_1_timestamp != '', ]
+# Delete surveys with an empty timestamp -- MOVED TO ONLY ACCEPT COMPLETED
+# mysurveys <- mysurveys[ mysurveys$rc_survey_1_timestamp != '', ]
+
+# Delete surveys unless their status is complete
+mysurveys <- mysurveys[ mysurveys$rc_survey_1_complete == 2, ]
+
+
 
 # Variable stub to use
 myvarstubs = c(
@@ -33,7 +38,7 @@ myvarstubs = c(
   'mri_1_1'
 )
 
-myvarstub = myvarstubs[16]
+myvarstub = myvarstubs[1]
 
 # Locus of Control Graph
 png(file=paste0("output/",myvarstub,"_locus.png"),width=800,height=400,res=150)
