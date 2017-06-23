@@ -68,3 +68,7 @@ myvarstub = myvarstubs[15]
 source('./bar_singlecategory.R')
 myvarstub = myvarstubs[16]
 source('./bar_singlecategory.R')
+
+source('./radar_dataprep.R')
+source('./radar_make12plot_arrangement1.R')
+source('./radar_make16plot_arrangement1.R')
