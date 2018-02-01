@@ -73,3 +73,5 @@ source('./radar_dataprep.R')
 source('./radar_make12plot_arrangement1.R')
 source('./radar_make16plot_arrangement1.R')
 source('./radar_make16plot_arrangement2.R')
+
+source('./makewordcloud.R')
