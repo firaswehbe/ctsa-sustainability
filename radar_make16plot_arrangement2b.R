@@ -34,7 +34,7 @@ mydata=rbind(rep(50,16) , rep(0,16) , mydata)
 CombinedPallette = brewer.pal(8,"Dark2")
 
 # radarChart Combined Locus
-png(file=paste0("output/radar_loc_combined_16cats_2b.png"),width=2400,height=2000,res=200)
+png(file=paste0("output/radar_loc_combined_16cats_2b.png"),width=3000,height=2000,res=200)
 radarchart( mydata[c(1,2,3,4,5,6),]  , axistype=1 ,
             #custom line
             plwd=4 , pcol=CombinedPallette[1:4], plty=1, 
@@ -50,7 +50,7 @@ legend("topleft", legend = c("Informatics","Research Office","CIO/IT","Other"),
 dev.off()
 
 # radarChart Combined Sustainability
-png(file=paste0("output/radar_sust_combined_16cats_2b.png"),width=2400,height=2000,res=200)
+png(file=paste0("output/radar_sust_combined_16cats_2b.png"),width=3000,height=2000,res=200)
 radarchart( mydata[c(1,2,7,8,9,10),]  , axistype=1 ,
             #custom line
             plwd=4 , pcol=CombinedPallette[5:8], plty=1, 
