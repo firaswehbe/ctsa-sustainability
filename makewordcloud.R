@@ -31,7 +31,7 @@ allwords1 <- allwords1[!allwords1[,1] %in% c('of','am','no','a','i','in',
                                              'it','none','from','was','also','there',
                                              'into','where', 'these', 'nil', 'both',
                                              'are','don','which','them','what','such',
-                                             'their','non'),]
+                                             'their','non','na','NA'),]
 write.csv(allwords1,file="output/wordfreq_locus.csv",row.names=FALSE)
 
 # Locus
@@ -65,7 +65,7 @@ allwords2 <- allwords2[!allwords2[,1] %in% c('of','am','no','a','i','in',
                                              'it','none','from','was','also','there',
                                              'into','where', 'these', 'nil', 'both',
                                              'are','don','which','them','what','such',
-                                             'their','non'),]
+                                             'their','non','na','NA'),]
 write.csv(allwords2,file="output/wordfreq_sust.csv",row.names=FALSE)
 
 # Comments
@@ -100,7 +100,7 @@ allwords3 <- allwords3[!allwords3[,1] %in% c('of','am','no','a','i','in',
                                              'it','none','from','was','also','there',
                                              'into','where', 'these', 'nil', 'both',
                                              'are','don','which','them','what','such',
-                                             'their','non'),]
+                                             'their','non','na','NA'),]
 write.csv(allwords3,file="output/wordfreq_comments.csv",row.names=FALSE)
 
 
