@@ -5,3 +5,5 @@
 input/*.csv
 output/*.png
 output/*.csv
+
+.DS_Store
