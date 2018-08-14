@@ -38,36 +38,52 @@ myvarstubs = c(
 # No need to call individual bar graphs. I'm doing it here.
 myvarstub = myvarstubs[1]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[2]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[3]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[4]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[5]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[6]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[7]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[8]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[9]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[10]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[11]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[12]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[13]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[14]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[15]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 myvarstub = myvarstubs[16]
 source('./bar_singlecategory.R')
+source('./answercombo.R')
 
 source('./radar_dataprep.R')
 source('./radar_make12plot_arrangement1.R')
